@@ -1,8 +1,8 @@
-import Footer from '../components/Footer';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Nav from '../components/Nav';
 import Head from 'next/head';
+import { useState } from 'react';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
 export default function Alphabet() {
     const [text, setText] = useState('');

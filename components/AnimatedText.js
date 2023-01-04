@@ -1,5 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { twMerge } from 'tailwind-merge';
 
 export default function AnimatedText({

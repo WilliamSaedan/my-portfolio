@@ -1,15 +1,14 @@
-import React, { useState, useRef, useEffect } from 'react';
 import { motion, useInView, useScroll, useVelocity } from 'framer-motion';
 import Link from 'next/link';
-import FocusSection from './FocusSection';
+import React, { useEffect, useRef, useState } from 'react';
 import AnimatedText from './AnimatedText';
+import FocusSection from './FocusSection';
 import Alphabet from './thumbnail/Alphabet';
-import ColorlessGreen from './thumbnail/ColorlessGreen';
-import Sketches from './thumbnail/Sketches';
-import Music from './thumbnail/Music';
 import Box from './thumbnail/Box';
-import Teacher from './thumbnail/Teacher';
+import ColorlessGreen from './thumbnail/ColorlessGreen';
 import ManeuVR from './thumbnail/ManeuVR';
+import Sketches from './thumbnail/Sketches';
+import Teacher from './thumbnail/Teacher';
 
 export default function Porfolio() {
     const [sectionNames, setDefaultWords] = useState([

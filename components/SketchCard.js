@@ -1,8 +1,7 @@
-import { twMerge } from 'tailwind-merge';
-import { useState, useRef, useEffect } from 'react';
-import SketchCanvas from './SketchCanvas';
-import Tilt from 'react-parallax-tilt';
+import { useRef, useState } from 'react';
 import { RiCloseCircleLine } from 'react-icons/ri';
+import Tilt from 'react-parallax-tilt';
+import SketchCanvas from './SketchCanvas';
 
 export default function SketchCard({ src, className, ...restOfProps }) {
     const [isActive, setIsActive] = useState(false);

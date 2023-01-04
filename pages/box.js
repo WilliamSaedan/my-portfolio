@@ -1,8 +1,7 @@
-import DisplayPage from '../components/DisplayPage';
-import Footer from '../components/Footer';
-import { SiGithub } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import DisplayPage from '../components/DisplayPage';
+import Footer from '../components/Footer';
 
 export default function Boxing() {
     const subtitle =
@@ -40,7 +39,7 @@ export default function Boxing() {
                         loop
                         className='w-full h-full object-cover'>
                         <source
-                            src='/assets/videos/box.mp4'
+                            src='https://d2pf2o8cr3c661.cloudfront.net/videos/box.mp4'
                             type='video/mp4'
                         />
                     </video>

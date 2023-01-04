@@ -1,9 +1,8 @@
-import Logo from './Logo';
-import Link from 'next/link';
+import { motion, useInView } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { motion, useInView } from 'framer-motion';
 import AnimatedText from './AnimatedText';
 
 gsap.registerPlugin(ScrollTrigger);

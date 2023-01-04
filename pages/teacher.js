@@ -1,81 +1,81 @@
-import DisplayPage from '../components/DisplayPage';
-import PlaceholderComment from '../components/PlaceholderComment';
-import Footer from '../components/Footer';
-import { SiGithub } from 'react-icons/si';
-import { RiExternalLinkFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import Head from 'next/head';
+import { useState } from 'react';
+import { RiExternalLinkFill } from 'react-icons/ri';
+import { SiGithub } from 'react-icons/si';
 import { twMerge } from 'tailwind-merge';
+import DisplayPage from '../components/DisplayPage';
+import Footer from '../components/Footer';
+import PlaceholderComment from '../components/PlaceholderComment';
 
 export default function Teacher() {
     const videoFrames = [
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-1.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-1.png',
             time: '0:00',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-2.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-2.png',
             time: '1:25',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-3.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-3.png',
             time: '6:17',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-4.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-4.png',
             time: '8:08',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-5.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-5.png',
             time: '11:56',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-6.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-6.png',
             time: '13:00',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-7.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-7.png',
             time: '15:30',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-8.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-8.png',
             time: '18:04',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-9.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-9.png',
             time: '20:31',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-10.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-10.png',
             time: '21:54',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-11.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-11.png',
             time: '25:05',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-12.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-12.png',
             time: '28:56',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-13.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-13.png',
             time: '33:09',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-14.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-14.png',
             time: '35:31',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-15.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-15.png',
             time: '39:14',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-16.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-16.png',
             time: '40:56',
         },
         {
-            link: '/assets/images/teacher/video-frames/glow-vid-17.png',
+            link: 'https://d2pf2o8cr3c661.cloudfront.net/images/teacher/video-frames/glow-vid-17.png',
             time: '44:03',
         },
     ];
@@ -117,7 +117,8 @@ export default function Teacher() {
         ]);
     };
 
-    const subtitle = 'A peer review platform for teachers to share and receive feedback on their lectures.';
+    const subtitle =
+        'A peer review platform for teachers to share and receive feedback on their lectures.';
     const description =
         'Developed for the staff at Deep Run High School, Glow & Grow was developed as part of a team of six students in the Center for Information Technology. I was responsible for the comment interface. The platform allows teachers to upload their lectures and send time-stamped comments labeled as "glows", "grows", "ideas" or "questions." This project was revived using React, TailwindCSS, NextJS, and Firebase.';
 

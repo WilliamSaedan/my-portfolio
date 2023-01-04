@@ -1,5 +1,4 @@
 import { Responsive, WidthProvider } from 'react-grid-layout';
-import GridWindow from '../components/GridWindow';
 import { twMerge } from 'tailwind-merge';
 import Nav from './Nav';
 
@@ -73,7 +72,7 @@ export default function DisplayPage({
                     </div>
                     <div key='title'>
                         <div className='absolute bottom-0 '>
-                            <h1 className='text-5xl font-Constantia'>
+                            <h1 className='text-5xl font-ConstantiaItalic'>
                                 {title}
                             </h1>
                         </div>
@@ -84,7 +83,7 @@ export default function DisplayPage({
                             <div className='h-[25px] w-full bg-black translate-x-1/3 translate-y-[25px] ' />
                         </div>
                         <div className='p-5'>
-                            <p className='text-2xl font-semibold'>{desc}</p>
+                            <p className='text-2xl font-bold'>{desc}</p>
                             <div className='w-full absolute flex flex-row justify-end gap-4 items-end bottom-0 right-4'>
                                 {icons.map((icon, idx) => (
                                     <div key={idx}>{icon}</div>

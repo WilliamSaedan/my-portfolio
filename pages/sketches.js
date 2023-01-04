@@ -1,10 +1,8 @@
-import SketchCanvas from '../components/SketchCanvas';
-import SketchCard from '../components/SketchCard';
-import Footer from '../components/Footer';
-import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 import Nav from '../components/Nav';
+import SketchCard from '../components/SketchCard';
 
 export default function Sketches() {
     const sketchURLs = [

@@ -1,27 +1,16 @@
-import Link from 'next/link';
-import Logo from './Logo';
+import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import Link from 'next/link';
 import { useState } from 'react';
 import AnimatedText from './AnimatedText';
-import { motion } from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Nav() {
     const [backIdx, setBackIdx] = useState(-1);
-    const [contactIdx, setContactIdx] = useState(-1);
 
     const backVariants = {
-        unhovered: {
-            x: 0,
-        },
-        hovered: {
-            x: 35,
-        },
-    };
-
-    const contactVariants = {
         unhovered: {
             x: 0,
         },

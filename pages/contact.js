@@ -1,11 +1,10 @@
-import { Responsive, WidthProvider } from 'react-grid-layout';
-import GridWindow from '../components/GridWindow';
-import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Footer from '../components/Footer';
-import Nav from '../components/Nav';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import React, { useEffect, useState } from 'react';
+import { Responsive, WidthProvider } from 'react-grid-layout';
+import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 

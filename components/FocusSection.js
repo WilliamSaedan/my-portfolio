@@ -1,6 +1,6 @@
-import { Responsive, WidthProvider } from 'react-grid-layout';
-import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import { Responsive, WidthProvider } from 'react-grid-layout';
 import { twMerge } from 'tailwind-merge';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
@@ -131,7 +131,13 @@ export default function FocusSection({
 
     return (
         <ResponsiveGridLayout
-            layouts={{ lg: lgLayout, md: lgLayout, sm: smLayout, xs: smLayout, xxs: smLayout }}
+            layouts={{
+                lg: lgLayout,
+                md: lgLayout,
+                sm: smLayout,
+                xs: smLayout,
+                xxs: smLayout,
+            }}
             breakpoints={{
                 lg: 1200,
                 md: 996,

@@ -1,19 +1,19 @@
-import DisplayPage from '../components/DisplayPage';
-import Footer from '../components/Footer';
-import ColoredText from '../components/coloredText';
-import { SiGithub } from 'react-icons/si';
+import { motion } from 'framer-motion';
+import Head from 'next/head';
+import { useEffect, useRef, useState } from 'react';
 import {
-    RiTerminalFill,
-    RiFileCopyLine,
     RiCheckboxCircleFill,
     RiErrorWarningFill,
     RiExternalLinkFill,
+    RiFileCopyLine,
+    RiTerminalFill,
 } from 'react-icons/ri';
-import { useState, useEffect, useRef } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { SiGithub } from 'react-icons/si';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { motion } from 'framer-motion';
-import Head from 'next/head';
+import ColoredText from '../components/coloredText';
+import DisplayPage from '../components/DisplayPage';
+import Footer from '../components/Footer';
 
 export default function ColorlessGreen() {
     const subtitle =

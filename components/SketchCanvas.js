@@ -1,7 +1,7 @@
-import { RiDownloadFill } from 'react-icons/ri';
-import { MdUndo, MdRefresh } from 'react-icons/md';
+import { useEffect, useRef, useState } from 'react';
 import CanvasDraw from 'react-canvas-draw';
-import { useRef, useState, useEffect } from 'react';
+import { MdRefresh, MdUndo } from 'react-icons/md';
+import { RiDownloadFill } from 'react-icons/ri';
 import { twMerge } from 'tailwind-merge';
 
 export default function SketchCanvas({

@@ -1,13 +1,14 @@
-import DisplayPage from '../components/DisplayPage';
-import Footer from '../components/Footer';
-import { SiGithub } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
+import { SiGithub } from 'react-icons/si';
+import DisplayPage from '../components/DisplayPage';
+import Footer from '../components/Footer';
 
 export default function ManeuVR() {
-    const subtitle = 'A virtual reality project developed in Unity for the SteamVR platform focused on different methodologies of locomotion';
+    const subtitle =
+        'A virtual reality project developed in Unity for the SteamVR platform focused on different methodologies of locomotion';
     const description =
-        'Developed as my capstone project in the Center for Information Technology, I sought to explore sensible, fun, and comfortable locomotion methodologies for the VR platform. Each form of locomotion was designed to have a link to the user\'s physical movement such that motion sickness is mitigated and such that the locomotion is engaging. ';
+        "Developed as my capstone project in the Center for Information Technology, I sought to explore sensible, fun, and comfortable locomotion methodologies for the VR platform. Each form of locomotion was designed to have a link to the user's physical movement such that motion sickness is mitigated and such that the locomotion is engaging. ";
 
     const links = [
         <>
@@ -46,7 +47,7 @@ export default function ManeuVR() {
                         loop
                         className='w-full h-full object-cover'>
                         <source
-                            src='/assets/videos/maneuvr-showcase.mp4'
+                            src='https://d2pf2o8cr3c661.cloudfront.net/videos/maneuvr-showcase.mp4'
                             type='video/mp4'
                         />
                     </video>
