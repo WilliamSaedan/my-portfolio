@@ -134,7 +134,7 @@ export default function Porfolio() {
                     variants={underlineVariants}
                 />
             </header>
-            <div className='flex flex-col gap-16'>
+            <div className='flex flex-col'>
                 <motion.div
                     whileInView={() => {
                         if (scrollVelocity.getVelocity() < 0) setSectionIdx(0);
@@ -209,13 +209,12 @@ export default function Porfolio() {
                     title='Alphabet Soup'
                     subText='A font I designed taking inspiration from the architecture of the Art Nouveau movement.'
                     color='red'
-                    direction='top'
+                    direction='left'
                     offset={headerHeight}
                     width={60}
                     href='/alphabet'>
                     <Alphabet />
                 </FocusSection>
-                <motion.div></motion.div>
             </div>
         </motion.div>
     );

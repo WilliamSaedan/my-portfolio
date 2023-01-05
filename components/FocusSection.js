@@ -130,6 +130,8 @@ export default function FocusSection({
 
     return (
         <ResponsiveGridLayout
+            className='mb-28'
+            {...restOfProps}
             layouts={{
                 lg: lgLayout,
                 md: lgLayout,
