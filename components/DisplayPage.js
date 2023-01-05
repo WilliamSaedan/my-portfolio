@@ -19,24 +19,11 @@ export default function DisplayPage({
     ];
 
     const smLayout = [
-        { i: 'mainView', x: 0, y: 2, w: 1, h: 3, static: true },
+        { i: 'mainView', x: 0, y: 1, w: 1, h: 8, static: true },
         { i: 'title', x: 0, y: 0, w: 1, h: 1, static: true },
-        { i: 'description', x: 0, y: 5, w: 1, h: 3, static: true },
+        { i: 'description', x: 0, y: 9, w: 1, h: 8, static: true },
     ];
 
-    const xsLayout = [
-        { i: 'mainView', x: 0, y: 0, w: 1, h: 3, static: true },
-        { i: 'title', x: 0, y: 3, w: 1, h: 1, static: true },
-        { i: 'description', x: 0, y: 5, w: 1, h: 3, static: true },
-    ];
-
-    const iconBox = twMerge(`
-        group
-        flex
-        items-center
-        justify-center
-        ${color ?? 'bg-white'}
-    `);
 
     return (
         <>
@@ -59,7 +46,7 @@ export default function DisplayPage({
                         lg: lgLayout,
                         md: lgLayout,
                         xs: smLayout,
-                        xxs: xsLayout,
+                        xxs: smLayout,
                     }}>
                     <div key='mainView'>
                         <div
@@ -68,11 +55,11 @@ export default function DisplayPage({
                             }`}>
                             {children}
                         </div>
-                        <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3 lg:-bottom-[40px]' />
+                        <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3' />
                     </div>
                     <div key='title'>
                         <div className='absolute bottom-0 '>
-                            <h1 className='text-5xl font-ConstantiaItalic'>
+                            <h1 className='text-5xl font-ConstantiaBold'>
                                 {title}
                             </h1>
                         </div>

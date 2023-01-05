@@ -65,7 +65,7 @@ export default function ManeuVR() {
                 transition={{
                     duration: 0.5,
                 }}
-                className='absolute h-full w-full object-cover overflow-visible'
+                className='absolute h-full w-full sm:w-1/2 sm:h-1/2 object-cover overflow-visible'
                 src='/assets/images/maneuvr/maneuvr-1.png'
             />
             <motion.img
@@ -75,7 +75,7 @@ export default function ManeuVR() {
                 transition={{
                     duration: 0.75,
                 }}
-                className='absolute h-full w-full object-cover overflow-visible'
+                className='absolute h-full w-full sm:w-1/2 sm:h-1/2 object-cover overflow-visible'
                 src='/assets/images/maneuvr/maneuvr-2.png'
             />
         </motion.div>

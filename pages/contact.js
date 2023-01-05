@@ -269,12 +269,15 @@ export default function Contact() {
                         </div>
                     </ResponsiveGridLayout>
                 </form>
+                <div className='flex justify-center items-center w-full h-96 text-9xl font-ConstantiaBold'>
+                    or
+                </div>
                 <header className='font-ConstantiaBold m-8 text-6xl'>
                     connect
                 </header>
                 <div className='flex flex-col justify-center items-center h-[60vh]'>
                     <button
-                        className='text-7xl font-ConstantiaBold m-8 group sm:text-6xl'
+                        className='relative text-7xl font-ConstantiaBold m-8 group sm:text-6xl'
                         onClick={() =>
                             navigator.clipboard.writeText(
                                 'saedanwilliam@gmail.com'

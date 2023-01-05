@@ -109,17 +109,19 @@ export default function Footer({ main = true }) {
                 <ul className='flex w-full font-Constantia text-sm py-8 px-16 md:flex-col md:gap-8'>
                     <li className='mr-20'>
                         <span className='mr-10 text-red'>Social</span>
-                        <span>
+                        <span className='group inline-block relative'>
                             <a href='https://www.linkedin.com/in/william-saedan/'>
                                 LinkedIn
+                                <div className='h-[2px] bg-black w-0 group-hover:w-full transition-all duration-500' />
                             </a>
                         </span>
                     </li>
                     <li className='mr-20'>
                         <span className='mr-10 text-yellow'>Porfolio</span>
-                        <span>
+                        <span className='group inline-block relative'>
                             <a href='https://github.com/WilliamSaedan'>
                                 GitHub
+                                <div className='h-[2px] bg-black w-0 group-hover:w-full transition-all duration-500' />
                             </a>
                         </span>
                     </li>
@@ -127,12 +129,14 @@ export default function Footer({ main = true }) {
                         <span className='mr-10 text-blue'>Email</span>
                         <span>
                             <button
+                                className='group relative'
                                 onClick={() =>
                                     navigator.clipboard.writeText(
                                         'saedanwilliam@gmail.com'
                                     )
                                 }>
                                 saedanwilliam@gmail.com
+                                <div className='h-[2px] bg-black w-0 group-hover:w-full transition-all duration-500' />
                             </button>
                         </span>
                     </li>

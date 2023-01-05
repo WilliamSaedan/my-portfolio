@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { Responsive, WidthProvider } from 'react-grid-layout';
-import { twMerge } from 'tailwind-merge';
 
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
@@ -148,6 +147,7 @@ export default function FocusSection({
             cols={{ lg: 1, md: 1, sm: 1, xs: 1, xxs: 1 }}
             allowOverlap={true}
             preventCollision={false}
+            isDraggable={false}
             onBreakpointChange={(breakpoint, cols) => {
                 switch (breakpoint) {
                     default:
@@ -167,7 +167,7 @@ export default function FocusSection({
                     ref={headerRef}>
                     <Link href={href}>
                         <div
-                            className={`font-ConstantiaBold text-9xl 2xl:text-7xl`}>
+                            className={`font-ConstantiaBold text-9xl 2xl:text-7xl sm:text-6xl`}>
                             {title}
                         </div>
                     </Link>
@@ -191,180 +191,4 @@ export default function FocusSection({
             </Link>
         </ResponsiveGridLayout>
     );
-
-    const twClasses = twMerge(`
-        w-full
-        flex gap-8 
-        ${className ?? ''}
-    `);
-
-    const getDirection = (direction) => {
-        switch (direction) {
-            case 'left':
-                return (
-                    <div
-                        className={twClasses}
-                        style={{ height: `${height}vh` }}
-                        {...restOfProps}>
-                        <div
-                            className={`h-full`}
-                            style={{ width: `${100 - width}%` }}>
-                            <div
-                                className={`
-                                sticky h-fit
-                                ${colorStyles.text}
-                                `}
-                                style={{ top: `${offset}px` }}>
-                                <Link href={href}>
-                                    <div
-                                        className={`font-ConstantiaBold text-9xl`}>
-                                        {title}
-                                    </div>
-                                </Link>
-                                <div className={`ml-40 mt-24 text-2xl`}>
-                                    {subText}
-                                </div>
-                            </div>
-                        </div>
-                        <Link
-                            href={href}
-                            className='h-full'
-                            style={{ width: `${width}%` }}>
-                            <div
-                                className={`
-                                relative
-                                h-full
-                                overflow-hidden
-                                ${colorStyles.bg}
-                                `}>
-                                {children}
-                            </div>
-                        </Link>
-                    </div>
-                );
-            case 'right':
-                return (
-                    <div
-                        className={`flex-row-reverse ${twClasses}`}
-                        style={{ height: `${height}vh` }}
-                        {...restOfProps}>
-                        <div
-                            className={`h-full text-right`}
-                            style={{ width: `${100 - width}%` }}>
-                            <div
-                                className={`
-                                sticky h-fit
-                                ${colorStyles.text}
-                                `}
-                                style={{ top: `${offset}px` }}>
-                                <Link href={href}>
-                                    <div
-                                        className={`font-ConstantiaBold text-9xl`}>
-                                        {title}
-                                    </div>
-                                </Link>
-                                <div
-                                    className={`ml-40 mt-24 text-2xl text-left`}>
-                                    {subText}
-                                </div>
-                            </div>
-                        </div>
-                        <Link
-                            href={href}
-                            style={{ width: `${width}%` }}>
-                            <div
-                                className={`
-                                relative
-                                h-full
-                                overflow-hidden
-                                ${colorStyles.bg}
-                                `}>
-                                {children}
-                            </div>
-                        </Link>
-                    </div>
-                );
-
-            case 'up':
-                return (
-                    <div style={{ width: `${width}%` }}>
-                        <div
-                            className={`
-                            sticky h-fit
-                            ml-8
-                            ${colorStyles.text}
-                            `}
-                            style={{ top: `${offset}px` }}>
-                            <Link href={href}>
-                                <div className={`font-ConstantiaBold text-9xl`}>
-                                    {title}
-                                </div>
-                            </Link>
-                            <div className={`ml-40 mt-24 text-2xl`}>
-                                {subText}
-                            </div>
-                        </div>
-                        <div
-                            className='mt-14'
-                            style={{ height: `${height}vh` }}>
-                            <Link href={href}>
-                                <div
-                                    className={`
-                                        relative
-                                        h-full
-                                        overflow-hidden
-                                        ${colorStyles.bg}
-                                        `}>
-                                    {children}
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                );
-
-            default:
-                return (
-                    <div
-                        className={twClasses}
-                        style={{ height: `${height}vh` }}
-                        {...restOfProps}>
-                        <div
-                            className={`h-full`}
-                            style={{ width: `${100 - width}%` }}>
-                            <div
-                                className={`
-                                sticky h-fit
-                                ${colorStyles.text}
-                                `}
-                                style={{ top: `${offset}px` }}>
-                                <Link href={href}>
-                                    <div
-                                        className={`font-ConstantiaBold text-9xl`}>
-                                        {title}
-                                    </div>
-                                </Link>
-                                <div className={`ml-40 mt-24 text-2xl`}>
-                                    {subText}
-                                </div>
-                            </div>
-                        </div>
-                        <Link
-                            href={href}
-                            style={{ width: `${width}%` }}>
-                            <div
-                                className={`
-                                relative
-                                h-full
-                                overflow-hidden
-                                ${colorStyles.bg}
-                                `}>
-                                {children}
-                            </div>
-                        </Link>
-                    </div>
-                );
-        }
-    };
-
-    return getDirection(direction);
 }
