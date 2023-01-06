@@ -134,7 +134,7 @@ export default function Porfolio() {
                     variants={underlineVariants}
                 />
             </header>
-            <div className='flex flex-col'>
+            <div className='flex flex-col pb-28'>
                 <motion.div
                     whileInView={() => {
                         if (scrollVelocity.getVelocity() < 0) setSectionIdx(0);

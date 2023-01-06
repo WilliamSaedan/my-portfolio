@@ -87,7 +87,7 @@ export default function Footer({ main = true }) {
                                 initial={{ x: '100%', opacity: 0 }}
                                 animate={isInView ? 'here' : 'away'}
                                 variants={garnishVariants}
-                                className='text-[165px] xl:text-9xl lg:text-8xl md:text-7xl inline-block'>
+                                className='text-[165px] xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl inline-block'>
                                 &nbsp;you
                                 <Link
                                     className='sm:block hover:text-red focus:text-red whitespace-pre-line transition-colors duration-200'
@@ -105,7 +105,7 @@ export default function Footer({ main = true }) {
                 ''
             )}
             <div>
-                <ul className='flex w-full font-Constantia text-sm py-8 px-16 md:flex-col md:gap-8'>
+                <ul className='flex w-full font-Constantia text-sm py-8 px-16 sm:px-8 md:flex-col md:gap-8'>
                     <li className='mr-20'>
                         <span className='mr-10 text-red'>Social</span>
                         <span className='group inline-block relative'>

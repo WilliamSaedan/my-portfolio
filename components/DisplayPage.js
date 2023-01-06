@@ -58,7 +58,7 @@ export default function DisplayPage({
                     <div key='mainView'>
                         <div className={`overflow-hidden w-full h-full`}>
                             <div
-                                className={`ml-6 h-full ${
+                                className={`ml-6 sm:ml-0 h-full ${
                                     color ?? 'bg-black'
                                 }`}>
                                 {children}

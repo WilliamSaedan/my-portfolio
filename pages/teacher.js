@@ -129,7 +129,7 @@ export default function Teacher() {
             </a>
         </>,
         <>
-            <a href='https://teacher-comments.vercel.app/'>
+            <a href='https://glow-and-grow.vercel.app/'>
                 <RiExternalLinkFill className='text-4xl hover:text-blue transition-colors duration-300' />
             </a>
         </>,
