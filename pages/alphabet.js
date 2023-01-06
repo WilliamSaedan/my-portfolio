@@ -33,10 +33,10 @@ export default function Alphabet() {
                     ease: 'anticipate',
                 }}>
                 <Nav />
-                <div className='mx-8 py-8 bg-white'>
-                    <div className='p-8 overflow-x-hidden'>
+                <div className='mx-8 sm:mx-0 py-8 bg-white'>
+                    <div className='p-8 sm:p-0 overflow-x-hidden'>
                         <textarea
-                            className='bg-transparent text-[150px] font-Wills resize-none focus:outline-none w-full p-8 overflow-x-auto overflow-y-hidden'
+                            className='bg-transparent text-[150px] xl:text-9xl lg:text-8xl md:text-7xl sm:text-5xl font-Wills resize-none focus:outline-none w-full h-screen p-8 overflow-x-auto overflow-y-hidden'
                             rows={5}
                             placeholder='The quick brown fox jumps over the lazy dog.'
                             value={text}

@@ -78,7 +78,6 @@ export default function Footer({ main = true }) {
                                 <Link
                                     className='group inline-block'
                                     href='/'>
-                                    {/* <Logo className='inline-block h-64 md:h-36 bg-black hover:bg-yellow group-focus:bg-yellow transition-colors duration-200' /> */}
                                     <span className='font-ConstantiaBold text-[300px] xl:text-[220px] md:text-[150px] sm:text-[100px] hover:text-yellow group-focus:text-yellow transition-colors duration-200'>
                                         WiLL
                                     </span>

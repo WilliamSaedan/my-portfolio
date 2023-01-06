@@ -5,19 +5,8 @@ import SketchCanvas from './SketchCanvas';
 
 export default function SketchCard({ src, className, ...restOfProps }) {
     const [isActive, setIsActive] = useState(false);
-    const [isScrolling, setIsScrolling] = useState(false);
     const canvasRef = useRef(null);
     const imageRef = useRef(null);
-
-    // const containterClasses = twMerge(`
-    //     flex
-    //     items-center
-    //     justify-center
-    //     p-8
-    //     transition-[min-width] duration-500
-    //     ${isActive ? 'min-w-full' : 'min-w-[10%]'}
-    //     ${className ?? ''}
-    // `);
 
     const keepInView = () => {
         let top = canvasRef.current.offsetTop - 50;

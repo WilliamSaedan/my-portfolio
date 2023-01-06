@@ -79,7 +79,7 @@ export default function ColorlessGreen() {
                     icons={links}
                     color='bg-white'>
                     <div isDraggable={false}>
-                        <p className='p-8 text-7xl'>
+                        <p className='p-8 text-7xl sm:text-5xl'>
                             <ColoredText text={colorlessSample}></ColoredText>
                         </p>
                         <div className='absolute flex gap-4 bottom-0 right-0 p-8 text-4xl bg-white'>

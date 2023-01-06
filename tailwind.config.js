@@ -51,5 +51,5 @@ module.exports = {
             sm: { max: '480px' },
         },
     },
-    plugins: [],
+    plugins: [require('tailwindcss'), require('autoprefixer')],
 };

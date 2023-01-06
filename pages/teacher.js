@@ -156,9 +156,10 @@ export default function Teacher() {
                     subtitle={subtitle}
                     desc={description}
                     icons={links}
-                    color='bg-white'>
-                    <div className='flex gap-4 p-4 h-full'>
-                        <div className='w-1/2'>
+                    color='bg-white'
+                    overrideSmHeight={12}>
+                    <div className='flex gap-4 p-4 h-full md:flex-wrap'>
+                        <div className='w-1/2 md:w-full'>
                             <motion.img
                                 onClick={() => {
                                     setCurrentFrame(
@@ -234,7 +235,7 @@ export default function Teacher() {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col gap-8 w-1/2 h-full overflow-y-scroll pr-4 max-w-xl'>
+                        <div className='flex flex-col gap-8 w-1/2 md:w-full h-full overflow-y-scroll pr-4 max-w-xl'>
                             {comments.map((comment) => (
                                 <motion.div
                                     onClick={() =>

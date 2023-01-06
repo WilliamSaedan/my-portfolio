@@ -11,6 +11,7 @@ export default function DisplayPage({
     icons = [],
     color,
     children,
+    overrideSmHeight = 8,
 }) {
     const lgLayout = [
         { i: 'mainView', x: 0, y: 1, w: 3, h: 8, static: true },
@@ -19,16 +20,22 @@ export default function DisplayPage({
     ];
 
     const smLayout = [
-        { i: 'mainView', x: 0, y: 1, w: 1, h: 8, static: true },
-        { i: 'title', x: 0, y: 0, w: 1, h: 1, static: true },
-        { i: 'description', x: 0, y: 9, w: 1, h: 8, static: true },
+        { i: 'mainView', x: 0, y: 2, w: 1, h: overrideSmHeight, static: true },
+        { i: 'title', x: 0, y: 0, w: 1, h: 2, static: true },
+        {
+            i: 'description',
+            x: 0,
+            y: overrideSmHeight + 2,
+            w: 1,
+            h: 12,
+            static: true,
+        },
     ];
-
 
     return (
         <>
             <Nav />
-            <div className='w-full h-full'>
+            <div className='w-full h-full min-h-[calc(100vh - 256px)] flex items-center'>
                 <ResponsiveGridLayout
                     className='w-full h-full'
                     breakpoints={{
@@ -41,7 +48,7 @@ export default function DisplayPage({
                     compactType='none'
                     cols={{ lg: 5, md: 5, sm: 1, xs: 1, xxs: 1 }}
                     rowHeight={75}
-                    margin={[25, 25]}
+                    margin={[0, 0]}
                     layouts={{
                         lg: lgLayout,
                         md: lgLayout,
@@ -49,22 +56,26 @@ export default function DisplayPage({
                         xxs: smLayout,
                     }}>
                     <div key='mainView'>
-                        <div
-                            className={`overflow-hidden w-full h-full ${
-                                color ?? 'bg-black'
-                            }`}>
-                            {children}
+                        <div className={`overflow-hidden w-full h-full`}>
+                            <div
+                                className={`ml-6 h-full ${
+                                    color ?? 'bg-black'
+                                }`}>
+                                {children}
+                            </div>
                         </div>
                         <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3' />
                     </div>
                     <div key='title'>
-                        <div className='absolute bottom-0 '>
+                        <div className='absolute bottom-0 m-5'>
                             <h1 className='text-5xl font-ConstantiaBold'>
                                 {title}
                             </h1>
                         </div>
                     </div>
-                    <div key='description'>
+                    <div
+                        key='description'
+                        className='py-6'>
                         <div className='p-5'>
                             <h1 className='text-3xl'>{subtitle}</h1>
                             <div className='h-[25px] w-full bg-black translate-x-1/3 translate-y-[25px] ' />

@@ -20,6 +20,10 @@ export default function SketchCanvas({
     const twClasses = twMerge(`
         relative
         h-full
+        flex
+        justify-center
+        items-center
+        max-w-[100vw]
         ${className ?? ''}
     `);
 

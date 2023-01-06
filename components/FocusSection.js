@@ -157,7 +157,7 @@ export default function FocusSection({
                 }
             }}
             rowHeight={rowHeight}
-            margin={[25, 25]}>
+            margin={[0, 0]}>
             <div
                 key='title'
                 className={`h-full ${
