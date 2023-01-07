@@ -168,7 +168,7 @@ export default function Contact() {
                                         user_name: e.target.value,
                                     })
                                 }
-                                className='absolute text-6xl h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent p-5 focus:outline-none font-ConstantiaBold'
+                                className='absolute text-6xl sm:text-5xl h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent p-5 focus:outline-none font-ConstantiaBold'
                                 placeholder='your name'
                             />
                             <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3 lg:-bottom-[40px]' />
@@ -275,9 +275,9 @@ export default function Contact() {
                 <header className='font-ConstantiaBold m-8 text-6xl'>
                     connect
                 </header>
-                <div className='flex flex-col justify-center items-center h-[60vh]'>
+                <div className='flex flex-col justify-center items-center min-h-[60vh]'>
                     <button
-                        className='relative text-7xl font-ConstantiaBold m-8 group sm:text-6xl'
+                        className='relative text-7xl font-ConstantiaBold m-8 group sm:text-4xl'
                         onClick={() =>
                             navigator.clipboard.writeText(
                                 'saedanwilliam@gmail.com'
@@ -289,7 +289,7 @@ export default function Contact() {
                         <div className='h-[8px] bg-black w-0 group-hover:w-full transition-all duration-500' />
                     </button>
                     <a
-                        className='text-7xl font-ConstantiaBold m-8 group'
+                        className='text-7xl sm:text-4xl font-ConstantiaBold m-8 group'
                         href='https://www.linkedin.com/in/william-saedan/'
                         target='_blank'
                         rel='noreferrer'>
@@ -297,7 +297,7 @@ export default function Contact() {
                         <div className='h-[8px] bg-black w-0 group-hover:w-full transition-all duration-500' />
                     </a>
                     <a
-                        className='text-7xl font-ConstantiaBold m-8 group'
+                        className='text-7xl sm:text-4xl font-ConstantiaBold m-8 group'
                         href='https://github.com/WilliamSaedan'
                         target='_blank'
                         rel='noreferrer'>

@@ -44,12 +44,12 @@ export default function ColorlessGreen() {
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/colorless-green'>
-                <SiGithub className='text-4xl hover:text-yellow transition-colors duration-300' />
+                <SiGithub className='text-4xl sm:text-xl hover:text-yellow transition-colors duration-300' />
             </a>
         </>,
         <>
             <a href='https://2tcsy75xbl.execute-api.us-east-1.amazonaws.com/default/colorlessGreen'>
-                <RiExternalLinkFill className='text-4xl hover:text-red transition-colors duration-300' />
+                <RiExternalLinkFill className='text-4xl sm:text-xl hover:text-red transition-colors duration-300' />
             </a>
         </>,
     ];
@@ -74,15 +74,13 @@ export default function ColorlessGreen() {
                     title='Colorless Green'
                     subtitle={subtitle}
                     desc={description}
-                    icon={<SiGithub className='text-[150px]' />}
-                    href='https://github.com/WilliamSaedan/colorless-green'
                     icons={links}
                     color='bg-white'>
                     <div isDraggable={false}>
-                        <p className='p-8 text-7xl sm:text-5xl'>
+                        <p className='p-8 text-7xl sm:text-3xl'>
                             <ColoredText text={colorlessSample}></ColoredText>
                         </p>
-                        <div className='absolute flex gap-4 bottom-0 right-0 p-8 text-4xl bg-white'>
+                        <div className='absolute flex gap-4 bottom-0 right-0 p-8 text-4xl sm:text-xl bg-white'>
                             <button
                                 className='hover:text-green focus:text-green transition-colors duration-200'
                                 onClick={() => {

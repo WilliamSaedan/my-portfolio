@@ -64,7 +64,7 @@ export default function Footer({ main = true }) {
         <footer
             ref={footerRef}
             className={`${
-                main ? 'h-full snap-end' : 'h-64'
+                main ? 'h-full snap-end sm:snap-none' : 'h-64'
             } flex flex-col justify-end overflow-hidden`}>
             {main ? (
                 <div>
@@ -78,7 +78,7 @@ export default function Footer({ main = true }) {
                                 <Link
                                     className='group inline-block'
                                     href='/'>
-                                    <span className='font-ConstantiaBold text-[300px] xl:text-[220px] md:text-[150px] sm:text-[100px] hover:text-yellow group-focus:text-yellow transition-colors duration-200'>
+                                    <span className='font-ConstantiaBold text-[300px] xl:text-[220px] md:text-[150px] sm:text-[90px] hover:text-yellow group-focus:text-yellow transition-colors duration-200'>
                                         WiLL
                                     </span>
                                 </Link>
@@ -87,7 +87,7 @@ export default function Footer({ main = true }) {
                                 initial={{ x: '100%', opacity: 0 }}
                                 animate={isInView ? 'here' : 'away'}
                                 variants={garnishVariants}
-                                className='text-[165px] xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl inline-block'>
+                                className='text-[165px] xl:text-9xl lg:text-8xl md:text-7xl sm:text-5xl inline-block'>
                                 &nbsp;you
                                 <Link
                                     className='sm:block hover:text-red focus:text-red whitespace-pre-line transition-colors duration-200'
@@ -105,9 +105,11 @@ export default function Footer({ main = true }) {
                 ''
             )}
             <div>
-                <ul className='flex w-full font-Constantia text-sm py-8 px-16 sm:px-8 md:flex-col md:gap-8'>
-                    <li className='mr-20'>
-                        <span className='mr-10 text-red'>Social</span>
+                <ul className='flex w-full font-Constantia text-sm py-8 px-16 sm:px-8 md:flex-col md:gap-8 sm:gap-4'>
+                    <li className='mr-20 sm:mr-0'>
+                        <span className='mr-10 inline-block min-w-[50px] text-red'>
+                            Social
+                        </span>
                         <span className='group inline-block relative'>
                             <a href='https://www.linkedin.com/in/william-saedan/'>
                                 LinkedIn
@@ -115,8 +117,10 @@ export default function Footer({ main = true }) {
                             </a>
                         </span>
                     </li>
-                    <li className='mr-20'>
-                        <span className='mr-10 text-yellow'>Porfolio</span>
+                    <li className='mr-20 sm:mr-0'>
+                        <span className='mr-10 inline-block  min-w-[50px] text-yellow'>
+                            Porfolio
+                        </span>
                         <span className='group inline-block relative'>
                             <a href='https://github.com/WilliamSaedan'>
                                 GitHub
@@ -124,8 +128,10 @@ export default function Footer({ main = true }) {
                             </a>
                         </span>
                     </li>
-                    <li className='mr-20'>
-                        <span className='mr-10 text-blue'>Email</span>
+                    <li className='mr-20 sm:mr-0'>
+                        <span className='mr-10 inline-block  min-w-[50px] text-blue'>
+                            Email
+                        </span>
                         <span>
                             <button
                                 className='group relative'

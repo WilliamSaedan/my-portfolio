@@ -125,12 +125,12 @@ export default function Teacher() {
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/teacher-comments'>
-                <SiGithub className='text-4xl hover:text-yellow transition-colors duration-300' />
+                <SiGithub className='text-4xl sm:text-xl hover:text-yellow transition-colors duration-300' />
             </a>
         </>,
         <>
             <a href='https://glow-and-grow.vercel.app/'>
-                <RiExternalLinkFill className='text-4xl hover:text-blue transition-colors duration-300' />
+                <RiExternalLinkFill className='text-4xl sm:text-xl hover:text-blue transition-colors duration-300' />
             </a>
         </>,
     ];

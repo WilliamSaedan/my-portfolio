@@ -13,7 +13,7 @@ export default function ManeuVR() {
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/ManeuVR'>
-                <SiGithub className='text-4xl hover:text-yellow transition-colors duration-300' />
+                <SiGithub className='text-4xl sm:text-xl hover:text-yellow transition-colors duration-300' />
             </a>
         </>,
     ];

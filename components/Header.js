@@ -197,7 +197,7 @@ export default function Header() {
                         key='mainLogo'
                         className='w-full h-full'>
                         <motion.div
-                            className='pb-8 h-full'
+                            className='pb-8 sm:pb-0 h-full'
                             animate={!isInView ? 'away' : 'here'}
                             variants={logoVariants}>
                             <Link
@@ -210,7 +210,7 @@ export default function Header() {
                             initial='here'
                             animate={!isInView ? 'away' : 'here'}
                             variants={garnishVariants}
-                            className='h-[25px] bg-black absolute -bottom-6 w-[135%]'></motion.div>
+                            className='h-[25px] md:h-4 bg-black absolute -bottom-6 w-[135%] md:w-3/4 '></motion.div>
                     </div>
                     <div
                         key='nav'
@@ -279,7 +279,7 @@ export default function Header() {
                         key='subLogo'
                         className='w-full h-full'>
                         <motion.div
-                            className='pt-8 h-full'
+                            className='pt-8 sm:pt-0 h-full'
                             animate={!isInView ? 'away' : 'here'}
                             variants={subLogoVariants}>
                             <a

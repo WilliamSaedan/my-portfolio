@@ -11,7 +11,7 @@ export default function DisplayPage({
     icons = [],
     color,
     children,
-    overrideSmHeight = 8,
+    overrideSmHeight = 4,
 }) {
     const lgLayout = [
         { i: 'mainView', x: 0, y: 1, w: 3, h: 8, static: true },
@@ -27,7 +27,7 @@ export default function DisplayPage({
             x: 0,
             y: overrideSmHeight + 2,
             w: 1,
-            h: 12,
+            h: 6,
             static: true,
         },
     ];
@@ -64,7 +64,7 @@ export default function DisplayPage({
                                 {children}
                             </div>
                         </div>
-                        <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3' />
+                        <div className='h-[25px] sm:h-3 w-full bg-black absolute -bottom-[25px] sm:-bottom-3 -left-1/3' />
                     </div>
                     <div key='title'>
                         <div className='absolute bottom-0 m-5'>
@@ -77,11 +77,11 @@ export default function DisplayPage({
                         key='description'
                         className='py-6'>
                         <div className='p-5'>
-                            <h1 className='text-3xl'>{subtitle}</h1>
-                            <div className='h-[25px] w-full bg-black translate-x-1/3 translate-y-[25px] ' />
+                            <h1 className='text-3xl sm:text-xl'>{subtitle}</h1>
+                            <div className='h-[25px] sm:h-3 w-full bg-black translate-x-1/3 translate-y-[25px] ' />
                         </div>
                         <div className='p-5'>
-                            <p className='text-2xl font-bold'>{desc}</p>
+                            <p className='text-2xl sm:text-sm font-bold'>{desc}</p>
                             <div className='w-full absolute flex flex-row justify-end gap-4 items-end bottom-0 right-4'>
                                 {icons.map((icon, idx) => (
                                     <div key={idx}>{icon}</div>
