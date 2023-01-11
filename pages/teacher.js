@@ -120,7 +120,7 @@ export default function Teacher() {
     const subtitle =
         'A peer review platform, developed using React, TailwindCSS, NextJS, and Firebase, for teachers to share and receive feedback on their lectures.';
     const description =
-        'Glow & Grow as part of a team of six students in the Center for Information Technology, is designed to serve the staff at Deep Run High School. I played the role of developing the comment interface for the platform. It enables teachers to upload their lectures and leave time-stamped comments labeled as "glows," "grows," "ideas," or "questions."';
+        'Glow & Grow, developed as part of a team of six in the Center for Information Technology, is designed to encourage the staff at Deep Run High School to give and receive feedback on lectures. I played the role of developing the comment interface for the platform. It enables teachers to upload their lectures and leave time-stamped comments labeled as "glows," "grows," "ideas," or "questions" that highlight upon the video reaching the appropriate time.';
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/teacher-comments'>
