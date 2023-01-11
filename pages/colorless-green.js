@@ -19,8 +19,7 @@ export default function ColorlessGreen() {
     const subtitle =
         'A serverless API hosted on AWS Lambda that generates random text according to an algorithm designed to loosely follow the rules of English grammar';
     const description =
-        'The algorithm backing this API was written in Python and follows general ideas of sentence structure. For instance, it will always precede a verb with a noun, and all adjectives will be attached to the noun they modify. It produces results reminiscent of the sentence that inspired the name of this API coined by Noam Chomsky: "Colorless green ideas sleep furiously," which he used to demonstrate that syntactically correct sentences are not necessarily meaningful.';
-
+        'The API is powered by an algorithm written in Python which adheres to the basic principles of sentence structure, such as placing a noun before a verb and connecting adjectives with the nouns they modify. The output is reminiscent of the sentence "Colorless green ideas sleep furiously" coined by Noam Chomsky, in which he highlights that a sentence can be grammatically correct but still lack meaning.';
     const [colorlessSample, setColorlessSample] = useState('');
     const toastRef = useRef();
 

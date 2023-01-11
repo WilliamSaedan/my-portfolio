@@ -6,10 +6,9 @@ import Footer from '../components/Footer';
 
 export default function ManeuVR() {
     const subtitle =
-        'A virtual reality project developed in Unity for the SteamVR platform focused on different methodologies of locomotion';
+        'A virtual reality project developed in Unity for the OpenXR platform focused on different methodologies of locomotion';
     const description =
-        "Developed as my capstone project in the Center for Information Technology, I sought to explore sensible, fun, and comfortable locomotion methodologies for the VR platform. Each form of locomotion was designed to have a link to the user's physical movement such that motion sickness is mitigated and such that the locomotion is engaging. ";
-
+        'As my capstone project in the Center for Information Technology, I aimed to research and develop sensible, enjoyable, and comfortable methods of movement in VR. Each form of locomotion was carefully crafted to have a connection to the user\'s physical movement in order to reduce motion sickness and increase engagement.'
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/ManeuVR'>

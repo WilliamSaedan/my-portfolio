@@ -8,8 +8,7 @@ export default function Boxing() {
         'A fighting game built in the Unity game engine about boxes that box.';
 
     const description =
-        'A passion project of mine to develop a fighting game that makes sense. In my personal experience, I have found that, for beginners, fighting games struggle with visual clarity. "Just Boxing" aims to solve this problem by strictly adhering to simple, visually clear mechanics. All damage in the game is determined by the relative speed and angle of the boxes on impact and nothing else. Common mechanics in fighting games such as blocking and countering natually emerge from these rules. For example, blocking is achieved by matching the angle of your opponents attack such that their corner does not hit one of your sides. The result is a visually clear fighting game that is easy to learn yet allows for creativity.';
-
+        'A passion project of mine to develop a fighting game that makes sense. I\'ve noticed that many fighting games can often be challenging for new players to learn due to a lack of visual clarity. "Just Boxing" aims to solve this problem by strictly adhering to simple, visually clear mechanics. All damage in the game is solely determined by the relative speed and angle of the boxes on impact. By adhering to these mechanics, it leads to a natural emergence of mechanics commonly found in fighting games such as blocking and countering. This results in a visually clear and easily understandable fighting game that still allows for creative gameplay.'
     return (
         <>
             <Head>
