@@ -8,7 +8,7 @@ export default function ManeuVR() {
     const subtitle =
         'A virtual reality project developed in Unity for the SteamVR and Oculus platform focused on different methodologies of locomotion';
     const description =
-        "As my capstone project in the Center for Information Technology, I aimed to research and develop sensible, enjoyable, and comfortable methods of movement in VR. Each form of locomotion was carefully crafted to have a connection to the user's physical movement in order to reduce motion sickness and increase engagement.";
+        "For my capstone project in the Center for Information Technology, I aimed to research and develop sensible, enjoyable, and comfortable methods of movement in VR. Each form of locomotion was carefully crafted to have a connection to the user's physical movement in order to reduce motion sickness and increase engagement.";
     const links = [
         <>
             <a href='https://github.com/WilliamSaedan/ManeuVR'>
