@@ -100,6 +100,8 @@ export default function Contact() {
         if (triedSubmit) verifyInput();
     }, [post]);
 
+    const [rowHeight, setRowHeight] = useState(125);
+
     const lgLayout = [
         { i: 'name', x: 0, y: 0, w: 1, h: 1.5, static: true },
         { i: 'subject', x: 1, y: 0, w: 2, h: 1, static: true },
@@ -141,7 +143,7 @@ export default function Contact() {
                     ease: 'anticipate',
                 }}>
                 <Nav />
-                <header className='font-ConstantiaBold ml-8 text-6xl'>
+                <header className='font-ConstantiaBold ml-8 text-6xl sm:text-3xl'>
                     say hi
                 </header>
                 <form onSubmit={sendEmail}>
@@ -154,8 +156,17 @@ export default function Contact() {
                             xs: 480,
                             xxs: 0,
                         }}
+                        onBreakpointChange={(breakpoint, cols) => {
+                            switch (breakpoint) {
+                                case 'xxs':
+                                    setRowHeight(75);
+                                    break;
+                                default:
+                                    setRowHeight(125);
+                            }
+                        }}
                         cols={{ lg: 3, md: 3, sm: 2, xs: 2, xxs: 2 }}
-                        rowHeight={125}
+                        rowHeight={rowHeight}
                         margin={[25, 25]}>
                         <div key='name'>
                             <input
@@ -168,10 +179,10 @@ export default function Contact() {
                                         user_name: e.target.value,
                                     })
                                 }
-                                className='absolute text-6xl sm:text-5xl h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent p-5 focus:outline-none font-ConstantiaBold'
+                                className='absolute text-6xl sm:text-3xl h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent p-5 focus:outline-none font-ConstantiaBold'
                                 placeholder='your name'
                             />
-                            <div className='h-[25px] w-full bg-black absolute -bottom-[25px] -left-1/3 lg:-bottom-[40px]' />
+                            <div className='h-[25px] w-full bg-black absolute -bottom-[25px] sm:h-[12px] -left-1/3 lg:-bottom-[40px]' />
                             <p
                                 className={`transition-all absolute bottom-0 lg:-bottom-6 pb-5 px-5 ${
                                     !errorState.nameLength
@@ -192,7 +203,7 @@ export default function Contact() {
                                         user_email: e.target.value,
                                     })
                                 }
-                                className='text-4xl absolute h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent px-5 focus:outline-none'
+                                className='text-4xl sm:text-xl absolute h-full placeholder:text-black placeholder:opacity-75 w-full bg-transparent px-5 focus:outline-none'
                                 placeholder='enter your email'
                             />
                             <p
@@ -216,7 +227,7 @@ export default function Contact() {
                                         subject: e.target.value,
                                     })
                                 }
-                                className='text-4xl absolute placeholder:text-black placeholder:opacity-75 h-full w-full bg-transparent p-5 focus:outline-none'
+                                className='text-4xl sm:text-2xl absolute placeholder:text-black placeholder:opacity-75 h-full w-full bg-transparent p-5 focus:outline-none'
                                 placeholder='write a subject'
                             />
                             <p
@@ -238,7 +249,7 @@ export default function Contact() {
                                         message: e.target.value,
                                     })
                                 }
-                                className='text-3xl text-white placeholder:text-white placeholder:opacity-75 bg-blue h-full w-full p-5 bg-transparent focus:outline-none resize-none'
+                                className='text-3xl sm:text-xl text-white placeholder:text-white placeholder:opacity-75 bg-blue h-full w-full p-5 bg-transparent focus:outline-none resize-none'
                                 placeholder='type a message'
                             />
                             <div className='h-[25px] w-full bg-black absolute -bottom-[14px] left-1/3' />
@@ -269,10 +280,10 @@ export default function Contact() {
                         </div>
                     </ResponsiveGridLayout>
                 </form>
-                <div className='flex justify-center items-center w-full h-96 text-9xl font-ConstantiaBold'>
+                <div className='flex justify-center items-center w-full h-96 text-9xl sm:text-5xl font-ConstantiaBold'>
                     or
                 </div>
-                <header className='font-ConstantiaBold m-8 text-6xl'>
+                <header className='font-ConstantiaBold m-8 text-6xl sm:text-3xl'>
                     connect
                 </header>
                 <div className='flex flex-col justify-center items-center min-h-[60vh]'>

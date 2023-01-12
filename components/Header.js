@@ -279,7 +279,7 @@ export default function Header() {
                         key='subLogo'
                         className='w-full h-full'>
                         <motion.div
-                            className='pt-8 sm:pt-0 h-full'
+                            className='pt-8 lg:pl-10 md:pl-8 sm:pt-0 sm:pl-4 h-full'
                             animate={!isInView ? 'away' : 'here'}
                             variants={subLogoVariants}>
                             <a

@@ -11,7 +11,7 @@ export default function Footer({ main = true }) {
     const footerRef = useRef();
     const isInView = useInView(footerRef, {
         once: false,
-        amount: 0.75,
+        amount: 0.5,
     });
 
     const footerWords = [' say hi?', ' add more?', ' team up?'];
@@ -76,9 +76,9 @@ export default function Footer({ main = true }) {
                                 variants={logoVariants}
                                 className='inline-block'>
                                 <Link
-                                    className='group inline-block'
+                                    className='group inline-flex'
                                     href='/'>
-                                    <span className='font-ConstantiaBold text-[300px] xl:text-[220px] md:text-[150px] sm:text-[90px] hover:text-yellow group-focus:text-yellow transition-colors duration-200'>
+                                    <span className='text-bottom font-ConstantiaBold text-[300px] xl:text-[220px] md:text-[11.5rem] sm:text-8xl hover:text-yellow group-focus:text-yellow transition-colors duration-200'>
                                         WiLL
                                     </span>
                                 </Link>
@@ -88,7 +88,7 @@ export default function Footer({ main = true }) {
                                 animate={isInView ? 'here' : 'away'}
                                 variants={garnishVariants}
                                 className='text-[165px] xl:text-9xl lg:text-8xl md:text-7xl sm:text-5xl inline-block'>
-                                &nbsp;you
+                                <span className='xl:ml-8 sm:ml-2'>&nbsp;you</span>
                                 <Link
                                     className='sm:block hover:text-red focus:text-red whitespace-pre-line transition-colors duration-200'
                                     href='/contact'>

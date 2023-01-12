@@ -152,6 +152,9 @@ export default function FocusSection({
             isDraggable={false}
             onBreakpointChange={(breakpoint, cols) => {
                 switch (breakpoint) {
+                    case 'xxs':
+                        setRowHeight(defaultRowHeight * 0.5 * (height / 100));
+                        break;
                     default:
                         setRowHeight(defaultRowHeight * (height / 100));
                 }
@@ -164,12 +167,12 @@ export default function FocusSection({
                     direction === 'right' ? 'text-right' : ''
                 } ${colorStyles.text}`}>
                 <div
-                    className={`sticky m-8 h-fit ${colorStyles.text}`}
+                    className={`sticky m-8 sm:m-4 h-fit ${colorStyles.text}`}
                     style={{ top: `${offset}px` }}
                     ref={headerRef}>
                     <Link href={href}>
                         <div
-                            className={`font-ConstantiaBold text-9xl 2xl:text-7xl sm:text-6xl`}>
+                            className={`font-ConstantiaBold text-9xl 2xl:text-7xl sm:text-4xl`}>
                             {title}
                         </div>
                     </Link>
@@ -180,7 +183,7 @@ export default function FocusSection({
                                 : direction === 'right'
                                 ? 'mr-40 xl:mr-16 lg:mr-0'
                                 : ''
-                        } mt-24 text-2xl`}>
+                        } mt-24 sm:mt-10 sm:text-base text-2xl`}>
                         {subText}
                     </div>
                 </div>

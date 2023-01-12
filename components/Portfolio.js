@@ -95,7 +95,7 @@ export default function Porfolio() {
     return (
         <motion.div
             id='portfolio'
-            className='p-8 sm:p-0 h-full'
+            className='p-8 h-full'
             ref={sectionRef}>
             <header
                 ref={headerRef}
