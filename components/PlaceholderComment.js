@@ -51,30 +51,30 @@ export default function PlaceholderComment({
             <div className='flex items-center gap-4 justify-between mb-2'>
                 <div className='flex items-center gap-4 my-2'>
                     <div
-                        className='h-10 w-10 rounded-full'
+                        className='h-10 w-10 sm:h-4 sm:w-4 rounded-full'
                         style={currentProfile}
                     />
                     <div
-                        className='h-10 w-40 rounded-lg'
+                        className='h-10 w-40 sm:h-4 sm:w-16 rounded-lg'
                         style={currentProfile}
                     />
                 </div>
-                <div className='px-4 py-2'>{time}</div>
+                <div className='px-4 py-2 sm:py-0 sm:text-xs'>{time}</div>
             </div>
-            <div className='flex items-center gap-2'>
+            <div className='flex items-center gap-2 text-xs'>
                 <div className='py-2'>{formatFeedback(feedback)}</div>
             </div>
-            <div className='flex flex-col gap-4 py-4'>
+            <div className='flex flex-col gap-4 py-4 sm:py-2'>
                 <div
-                    className='h-5 w-3/4 rounded-md'
+                    className='h-5 sm:h-2 w-3/4 rounded-md'
                     style={currentProfile}
                 />
                 <div
-                    className='h-5 w-full rounded-md'
+                    className='h-5 sm:h-2 w-full rounded-md'
                     style={currentProfile}
                 />
                 <div
-                    className='h-5 w-1/2 rounded-md'
+                    className='h-5 sm:h-2 w-1/2 rounded-md'
                     style={currentProfile}
                 />
             </div>

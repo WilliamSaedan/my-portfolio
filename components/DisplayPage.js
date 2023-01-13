@@ -58,17 +58,17 @@ export default function DisplayPage({
                     <div key='mainView'>
                         <div className={`overflow-hidden w-full h-full`}>
                             <div
-                                className={`ml-6 sm:ml-0 h-full ${
+                                className={`mx-6 sm:m-4 h-full ${
                                     color ?? 'bg-black'
                                 }`}>
                                 {children}
                             </div>
                         </div>
-                        <div className='h-[25px] sm:h-3 w-full bg-black absolute -bottom-[25px] sm:-bottom-3 -left-1/3' />
+                        <div className='h-[25px] lg:h-4 lg:-bottom-4 sm:h-3 w-full bg-black absolute -bottom-[25px] sm:-bottom-3 -left-1/3' />
                     </div>
                     <div key='title'>
                         <div className='absolute bottom-0 m-5'>
-                            <h1 className='text-5xl font-ConstantiaBold'>
+                            <h1 className='text-5xl md:text-4xl sm:text-3xl font-ConstantiaBold'>
                                 {title}
                             </h1>
                         </div>
@@ -77,11 +77,11 @@ export default function DisplayPage({
                         key='description'
                         className='py-6'>
                         <div className='p-5'>
-                            <h1 className='text-3xl sm:text-xl'>{subtitle}</h1>
-                            <div className='h-[25px] sm:h-3 w-full bg-black translate-x-1/3 translate-y-[25px] ' />
+                            <h1 className='text-3xl md:text-xl sm:text-lg'>{subtitle}</h1>
+                            <div className='h-[25px] md:h-4 sm:h-3 w-full bg-black translate-x-1/3 translate-y-[25px] ' />
                         </div>
                         <div className='p-5'>
-                            <p className='text-2xl sm:text-sm font-bold'>{desc}</p>
+                            <p className='text-2xl md:text-lg sm:text-sm font-semibold'>{desc}</p>
                             <div className='w-full absolute flex flex-row justify-end gap-4 items-end bottom-0 right-4'>
                                 {icons.map((icon, idx) => (
                                     <div key={idx}>{icon}</div>

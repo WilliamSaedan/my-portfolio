@@ -106,7 +106,7 @@ export default function Porfolio() {
                     variants={logoVariants}
                     className='inline-block h-full'>
                     <Link href='/'>
-                        <div className='text-[150px] md:text-[110px] sm:text-[90px] leading-none z-10'>
+                        <div className='text-[150px] md:text-[110px] sm:text-[65px] leading-none z-10'>
                             <span className='text-blue'> I</span>
                             <span className='text-red'> AM</span>
                         </div>
@@ -117,14 +117,14 @@ export default function Porfolio() {
                         initial={{ y: '25%', opacity: 0 }}
                         animate={isInView ? 'here' : 'away'}
                         variants={garnishVariants}
-                        className='inline-block text-[110px] lg:text-[85px] md:text-[60px] sm:text-[45px] pl-10 sm:pl-4'>
+                        className='inline-block text-[110px] lg:text-[85px] md:text-[60px] sm:text-[30px] pl-10 md:pl-6 sm:pl-4'>
                         {' '}
                         a
                     </motion.div>
                     <AnimatedText
                         words={sectionNames}
                         idx={sectionIdx}
-                        className='text-[110px] lg:text-[85px] md:text-[60px] sm:text-[45px]'
+                        className='text-[110px] lg:text-[85px] md:text-[60px] sm:text-[30px]'
                     />
                 </span>
                 <motion.div

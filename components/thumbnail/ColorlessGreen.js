@@ -42,7 +42,7 @@ export default function ColorlessGreen() {
             onMouseEnter={() => {
                 setColorlessIdx((colorlessIdx + 1) % colorlessPrompts.length);
             }}>
-            <div className='h-fit w-full text-8xl p-8 rounded-3xl rotate-12 sm:text-7xl sm:rotate-6 drop-shadow-md bg-white'>
+            <div className='h-fit w-full text-8xl p-8 rounded-3xl rotate-12 sm:text-5xl sm:rotate-6 drop-shadow-md bg-white'>
                 {colorlessPrompts[colorlessIdx]}
             </div>
         </div>

@@ -17,7 +17,7 @@ export default function Teacher() {
             <div className='w-full h-full -rotate-12'>
                 <motion.img
                     src={videoFrames[currentFrame]}
-                    className='absolute w-3/4 rounded-lg drop-shadow-lg max-w-2xl'
+                    className='absolute w-full rounded-lg drop-shadow-lg max-w-2xl'
                 />
                 <div className='absolute top-1/4 left-1/2 flex flex-col gap-8 w-3/4 max-w-xl'>
                     <motion.div onHoverStart={() => setCurrentFrame(3)}>
